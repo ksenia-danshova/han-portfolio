@@ -1,0 +1,70 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Satoshi';
+  font-style: normal;
+  src: url('../fonts/Satoshi/Satoshi-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Satoshi';
+  font-style: normal;
+  src: url('../fonts/Satoshi/Satoshi-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Satoshi';
+  font-style: normal;
+  src: url('../fonts/Satoshi/Satoshi-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Satoshi';
+  font-style: normal;
+  src: url('../fonts/Satoshi/Satoshi-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --color-black:#46434E;
+  --color-dark: #434343;
+  --color-white: #FFFFFF;
+  --color-light: #F2F3F2;
+  --color-body: #7C808B;
+  --color-accent: #7A8391;
+  --color-primery-300: #F2BB97;
+  --color-primery-400: #EC9E6A;
+  --color-primery-500: #E6813E;
+  --color-primery-600: #D4651B;
+  --color-primery-700: #A75016;
+  --color-secondary-300: #7398C7;
+  --color-secondary-400: #55749B;
+  --color-secondary-500: #45577B;
+  --colot-secondary-600: #304258;
+  --color-secondary-700: #1F2A38;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--color-body);
+  line-height: normal;
+  scroll-behavior: smooth;
+}
