@@ -41,16 +41,17 @@
   --color-light: #F2F3F2;
   --color-body: #7C808B;
   --color-accent: #7A8391;
-  --color-primery-300: #F2BB97;
-  --color-primery-400: #EC9E6A;
-  --color-primery-500: #E6813E;
-  --color-primery-600: #D4651B;
-  --color-primery-700: #A75016;
+  --color-primary-300: #F2BB97;
+  --color-primary-400: #EC9E6A;
+  --color-primary-500: #E6813E;
+  --color-primary-600: #D4651B;
+  --color-primary-700: #A75016;
   --color-secondary-300: #7398C7;
   --color-secondary-400: #55749B;
   --color-secondary-500: #45577B;
   --colot-secondary-600: #304258;
   --color-secondary-700: #1F2A38;
+  --color-base: #e0e0e0;
 }
 
 *, ::before, ::after {
@@ -67,4 +68,102 @@ html, body {
   color: var(--color-body);
   line-height: normal;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+  transition: background-color 0.3s;
+}
+
+body.theme-dark {
+  background-color: var(--color-dark);
+}
+
+.page {
+  padding: 0px 24px;
+}
+
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+
+.logo__image {
+  display: flex;
+  width: 100%;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__link {
+  display: flex;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--color-black);
+  transition: color 0.3s;
+}
+
+.theme-dark .navigation__link {
+  color: var(--color-white);
+}
+
+.theme-switch {
+  width: 78px;
+  height: 40px;
+  background-color: var(--color-base);
+  border: none;
+  border-radius: 40px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.theme-switch::before {
+  font-family: icomoon;
+  content: '\e901';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  font-size: 21px;
+  color: var(--color-primary-500);
+  transition: color 0.3s, transform 0.3s;
+  transform: translateX(0);
+}
+
+.theme-switch_dark::before {
+  font-family: icomoon;
+  content: '\e906';
+  color: var(--color-secondary-500);
+  transform: translateX(38px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0px;
+}
+
+.header__logo,
+.header__theme {
+  flex-shrink: 0;
 }
