@@ -371,6 +371,8 @@ body.theme-dark {
   display: flex;
   justify-content: space-between;
   padding: 48px 0;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .services__content {
