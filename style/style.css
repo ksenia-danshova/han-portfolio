@@ -39,6 +39,7 @@
   --color-dark: #434343;
   --color-white: #FFFFFF;
   --color-light: #F2F3F2;
+  --color-light-a8: rgba(242, 243, 242, 0.8);
   --color-body: #7C808B;
   --color-accent: #7A8391;
   --color-primary-300: #F2BB97;
@@ -97,6 +98,10 @@ body.theme-dark {
 
 .icon-download::before {
   content: '\e900';
+}
+
+.icon-arrow::before {
+  content: '\e907';
 }
 
 .page {
@@ -163,9 +168,13 @@ body.theme-dark {
 
 .title {
   color: var(--color-primary-500);
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 18px;
   line-height: 28px;
+}
+
+.title_large {
+  font-size: 20px;
 }
 
 .text {
@@ -206,6 +215,44 @@ body.theme-dark {
 
 .theme-dark .socials__link {
   color: var(--color-white);
+}
+
+.project {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.project__content {
+  background-color: var(--color-light-a8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 37px 28px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.project:hover .project__content {
+  transform: translateY(0);
+}
+
+.project__name {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.project__image {
+  display: flex;
+  width: 100%;
+  max-width: 592px;
+}
+
+.project__title {
 }
 
 .logo {
@@ -373,13 +420,11 @@ body.theme-dark {
   padding: 48px 0;
   align-items: flex-start;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .services__content {
   max-width: 475px;
-}
-
-.services__title {
 }
 
 .services__heading {
@@ -424,4 +469,47 @@ body.theme-dark {
 
 .theme-dark .services__list-title {
   color: var(--color-light);
+}
+
+.projects {
+  padding: 48px 0;
+}
+
+.projects__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.projects__title,
+.projects__heading {
+  text-align: right;
+}
+
+.projects__list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.projects__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.projects__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 28px;
+  color: var(--color-black);
+}
+
+.theme-dark .projects__link-icon {
+  color: var(--color-white);
 }
