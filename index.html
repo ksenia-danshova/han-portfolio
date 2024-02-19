@@ -13,7 +13,7 @@
                 <a class="logo header__logo" href="/">
                     <img src="images/logo.png" alt="han-brand" class="logo__image">
                 </a>
-                <nav class="navigation">
+                <nav class="navigation header__navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
                             <a class="navigation__link" href="/">Blog</a>
@@ -44,7 +44,10 @@
                         </ul>  
                     </nav>
                 </div>
-                <img class="intro__hero" src="images/hero.png" alt="hero">
+                <picture class="intro__hero">
+                    <source srcset="images/emoji.png" media="(max-width: 974px)">
+                    <img class="intro__hero" src="images/hero.png" alt="hero">
+                </picture>
                 <div class="intro__content">
                     <h2 class="heading intro__heading">
                         UI Engineer based on Yogyakarta, Indonesia
@@ -145,7 +148,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="blog">
+             <section class="blog">
                 <div class="blog__intro">
                     <div>  
                         <h6 class="title blog__title">Blog</h6>
@@ -158,7 +161,7 @@
                 </div>
                 <div class="blog__content">
                     <ul class="blog__list">
-                        <li class="blog__list-item">
+                        <li class="blog__list-item  blog__list-earth">
                             <img class="blog__image" src="images/paris.png" alt="Eiffel Tower"> 
                                 <span class="text text_larger blog__date">October 9th, 2022 — 7 min read</span> <br>
                                     <a class="blog__link" href="/">
@@ -191,7 +194,7 @@
                     </div>   
             </section>
             <section class="footer">
-               <p class="text footer__text">2023 hanihusam. All rights reserved.</p>
+               <p class="text footer__text">2023 hanihusam. All rights reserved. by Kseniia</p>
                 <nav class="intro__socials socials">
                     <ul class="socials__list">
                         <li class="socials__item">
