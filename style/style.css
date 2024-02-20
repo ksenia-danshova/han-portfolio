@@ -651,7 +651,6 @@ body.theme-dark {
 }
 }
 
-
 @media (max-width: 678px) {
 
   .container {
@@ -674,10 +673,7 @@ body.theme-dark {
     line-height: 28px;
   }
 
-  .intro__name {
-    display: none;
-  }
-
+  .intro__name,
   .intro__line {
     display: none;
   }
@@ -712,7 +708,8 @@ body.theme-dark {
     flex-wrap: nowrap;
   }
 
-  .about {
+  .about,
+  .question {
     margin-inline: -24px;
   }
 
@@ -736,23 +733,13 @@ body.theme-dark {
     flex-direction: column;
   }
 
-  .blog__intro {
-    flex-wrap: wrap;
-  }
-
-  .blog__list {
-    flex-wrap: wrap;
-  }
-
-  .question {
-    margin-inline: -24px;
-  }
-
+  .blog__intro,
+  .blog__list,
   .question__content {
     flex-wrap: wrap;
-    }
+  }
 
   .question__heading {
     margin-bottom: 32px ;
-    }
   }
+}
