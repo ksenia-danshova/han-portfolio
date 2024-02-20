@@ -648,7 +648,7 @@ body.theme-dark {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
+  }
 }
 
 @media (max-width: 678px) {
